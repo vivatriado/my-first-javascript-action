@@ -2,6 +2,6 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
   },
-  "postCreateCommand": "echo \"//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}\" > ~/.npmrc && npm install @actions/core"
+  "postCreateCommand": "echo \"//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}\" > ~/.npmrc && npm install @actions/core && npm install @actions/github"
   
 }
