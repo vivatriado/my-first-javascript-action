@@ -1,6 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-      "ghcr.io/devcontainers-contrib/features/corepack:1": {}
-  }
+  },
+  "postCreateCommand": "echo \"//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}\" > ~/.npmrc && npm install @actions/core"
+  
 }
